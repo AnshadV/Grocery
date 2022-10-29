@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="173dp"
+    android:layout_height="255dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:elevation="8dp"
+    android:layout_margin="10dp">
+
+
+<LinearLayout
+    android:layout_width="173dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="34dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/banana" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/gilroybold"
+        android:text="Organic Bananas"
+        android:textColor="#181725"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="6pcs"
+        android:textColor="#7C7C7C" />
+
+    <RelativeLayout
+        android:layout_width="173dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/gilroybold"
+            android:text="$5.99"
+            android:textColor="#181725" />
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_corner"
+            android:src="@drawable/ic_baseline_add_24" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
